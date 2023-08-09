@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: pink;
+            background-color: green;
+            width: auto;
+        }
+
+        div > p {   /* esse seletor > diz que o p é filho da div */
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+            width: 180px;
+            color: black;
+            text-decoration: underline;
+        }
+
+        div:hover {
+            color: green ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse <strong>aqui</strong>
+        <p>TEXTO SURPRESA...</p>
+    </div>
+    <p>FIM</p>
+</body>
+</html>
