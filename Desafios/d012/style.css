@@ -32,6 +32,7 @@ header {
 
 header h1 {
     font-family: var(--fonte2);
+    font-size: 50px;
     font-variant: small-caps;
     padding-top: 50px;
     
@@ -64,8 +65,8 @@ main p {
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
     line-height: 2em;
 }
 
@@ -73,7 +74,7 @@ section {
 #imagem1 {
     background: black url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.834);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.585);
     min-width: fit-content;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -82,7 +83,7 @@ section {
 #imagem2 {
     background: black url(imagens/background002.jpg) right center no-repeat fixed;
     background-size: cover;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.834);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
     min-width: fit-content;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -90,7 +91,8 @@ section {
 
 .interior {
     background-color: rgba(0, 0, 0, 0.591);
-    color: aliceblue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
     width: 300px;
     height: 300px;
     margin-left: 20px;
