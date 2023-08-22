@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            border-radius: 2px;
+            border: 2px solid rgb(189, 189, 175);
+            width: 400px;
+            background-color: beige;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.278);
+        }
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="sexo"> Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="sexo"> Feminino</label>
+            <input type="radio" name="sexo" id="isxout" value="O"> <label for="sexo"> 
+            Outros</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Nataçao</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao">
+                <input type="reset" value="Limpar" class="botao">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
