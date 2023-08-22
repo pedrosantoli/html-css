@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required size="10" placeholder="email ou CPF" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="senha" id="isen" required minlength="8" maxlength="15" autocomplete="current-password" placeholder="minimo 8 caracteres"> 
+        </p>
+
+        <p>
+            <input type="checkbox" name="check" id="icheck">
+            <label for="icheck">Aceito os <a href="#">Termos de Uso</a></label>
+        </p>
+
+        <p>
+            <label for="irange">Nivel de Satisfaçao</label>
+            <input type="range" name="range" id="irange" min="0" max="10" value="10">
+        
+        </p>
+            
+        <p>
+            <label for="idata">Data: </label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="itel">Digite aqui seu telefone: </label>
+            <input type="tel" name="telefone" id="itel" maxlength="12" size="12">
+        </p>
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>inpu</p>
+        
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
